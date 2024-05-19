@@ -1,19 +1,37 @@
-# flutter_yolov5_app
+# Flutter Object Detection App
 
-Sample flutter app of object detection by yolov5
+This repository is a Flutter-based object detection app utilizing Yolo v8 and SSD MobileNet models. This project is a fork of [syu-kwsk/flutter_yolov5_app](https://github.com/syu-kwsk/flutter_yolov5_app).
 
-## Articles
-[[Flutter] YOLOv5を使ってリアルタイムで物体検出](https://qiita.com/syu-kwsk/items/e3126f55895444aa408b)
+## Screenshots
 
-## Getting Started
+![screenshot1](./assets/intr/IMG_4814.PNG)
+![screenshot2](./assets/intr/IMG_4815.PNG)
+![screenshot3](./assets/intr/IMG_4816.PNG)
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Yolo v8 Model**: Provides high-precision object detection.
+- **SSD MobileNet Model**: Offers fast object detection.
+- **GPU Support**: Optimizes performance with GPU support.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Run the project:
+    ```sh
+    flutter run
+    ```
+2. Once the app is running, point your device's camera at objects to detect them.
+
+## Configuration
+
+### Model Selection
+
+You can select the model to use within the app, switching between Yolo v8 and SSD MobileNet.
+
+### GPU Usage
+
+There is an option to enable or disable GPU usage to meet performance requirements.
+
+## Preparing Model Files (.tflite)
+
+Due to the large file size of the model files, they are not included in the repository. Please prepare the required model files (.tflite) yourself.
